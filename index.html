@@ -22,26 +22,26 @@
         <input type="telefone" id="telefone"placeholder="Digite seu telefone">
         <br><br>
         <label for="cpf">Cpf:</label>
-        <input type="cpf" id="cpf"placeholder="Digite seu cpf">
+        <input type="cpf" id="cpf"placeholder="Digite seu cpf" required>
         <br><br>
         <label for="idade">Idade:</label>
         <input type="idade" id="idade"placeholder="Digite sua idade">
         <br><br>
         <label for="cidade">Cidade:</label>
-        <input type = "text" id="cidade" placeholder="Digite sua cidade">
+        <input type = "text" id="cidade" placeholder="Digite sua cidade" required>
         <br><br>
         <label for="moradia">Moradia:</label>
-        <select name="moradia" id="moradia">
+        <select name="moradia" id="moradia" required>
         <option value="">Selecione</option>
         <option value="casa" >Casa</option>
         <option value="apartamento">Apartamento</option></select>
         <br><br>
         <label for="quintal">Tem quintal?</label>
-        <input type="radio" name="quintal" value="sim">sim
+        <input type="radio" name="quintal" value="sim" >sim
         <input type="radio" name="quintal" value="nao">não
         <br><br>
         <label for="pet">Já teve pet?</label>
-        <input type="radio" name="pet" value="sim">sim
+        <input type="radio" name="pet" value="sim" >sim
         <input type="radio" name="pet" value="nao">não
         <br><br>
         <label for="hrs sozinho">Quantas horas o animal vai ficar sozinho?:</label><br>
@@ -51,9 +51,11 @@
         <br>
         <textarea name="adoção" id="adoção" cols="29" rows="6"></textarea>
         <br><br>
-        Aceite o termo de responsabilidade<input type="checkbox" name="checkbox">
+        Aceite o termo de responsabilidade<input type="checkbox" name="checkbox" required>
         <br><br>
         <button type="submit">Enviar</button>
+
+        <script src="script/script.js"></script>
     </form>
 
  </div>
