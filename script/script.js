@@ -11,12 +11,15 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     let quintal = document.querySelector('input[name="quintal"]:checked');
     let pet = document.querySelector('input[name="pet"]:checked');
     let h = document.getElementById("h").value;
+    let motivo = document.getElementById("adoção").value;
 
-    if(nome.length < 3) return alert("nome invalido");
-    if(email.includes("@")) return alert("email invalido");
-    if(telefone < 8) return alert("numero invalido");
-    if(idade < 18) return alert("idade insuficiente");
-    if(motivo.length < 10) return alert("motio invalido");
+    if (nome.length < 3) return alert("nome invalido");
+    if (!email.includes ("@")) return alert("email invalido")
+    if (telefone.length < 8) return alert("telefone invalido");
+    if (cpf.length <9) return alert("cpf invalido");
+    if (idade < 18) return alert("idade insuficiente");
+    if (motivo.length < 10) return alert("motio invalido");
+    
 
 
 
