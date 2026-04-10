@@ -18,6 +18,8 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     if (telefone.length < 8) return alert("telefone invalido");
     if (cpf.length <9) return alert("cpf invalido");
     if (idade < 18) return alert("idade insuficiente");
+    if (!moradia) return alert("O tipo de moradia não esta selecionado");
+    if (!quintal ) return alert("O tipo de quintal não esta  selecionado");
     if (motivo.length < 10) return alert("motio invalido");
     
 
